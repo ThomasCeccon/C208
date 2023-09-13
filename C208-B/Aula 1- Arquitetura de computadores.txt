@@ -1,0 +1,41 @@
+Aula 1- Arquitetura de computadores
+
+PASSADO EM AULA:
+micro controlador: lento,  8 bits , menor consumo , 
+- ja inclui no Atmega espaco para armazenamento, no processador nao 
+
+micro processador: rapido, 32 bits , maior consumo 
+-faz operaçoes logicas,op.aritmeticas, trabalha com movimentacao de dados entre o processador e a memoria
+
+-Assembly: melhor pois oferece maior performace e menor custo
+
+Para nós compreendermos a linquagem de maquina e as maquinas nos compreender precisamos utilizar um TRADUTOR
+-Tradução: 
+
+Montador: Traduz somente na linguagem assembly
+  .programa fonte(assembly)-> Montador(programa tradutor em assembler) -> programa objeto(linguagem de maquina)->Link-Edicao(ligacao)
+  .Ligador:É o programa que transforma o codigo objeto(linguagem de maquina 010101) em um programa executavel(EXE) (possui bibliotecas para conseguir executar o programa objeto)
+  .Gera a condição necessaria para que o S.O armazene na memoria e execute o codigo
+
+     compilador: Pega a linha de codigo inteira e traduz o programa fonte(linguagem de alto nivel c++,c,)-> compilador->programa objeto(linguagem de maquina 01010)
+-Mais rapida do que o interpretador pois traduz tudo de uma só vez e depois executa
+           Compilador direto:Compila na propria maquina alvo()
+           Compilador cruzado:Compila o codigo fonte em uma outra maquina alvo
+
+           Intepretador:Faz a traducao do programa fonte(linguagem de alto nivel) linha por linha-> interpretador->programa objeto(linguagem de maquina)
+              -Possui maior flexibilidade
+               .python,html,lisp,basic...
+
+Maquina virtual: Software que simula uma maquina fisica, conseguindo executar varios programas onde a memoria e processador etc nao dependem de hardware
+ex: Java que utiliza JVM(java virtual machine), assim o mesmo codigo pode ser utilizado em arquiteturas diferentes e sistemas operacionais diferentes
+
+SLIDE:
+Computador: Sistema complexo com varias conexoes
+-Possui sub-componentes para formar um computador
+-Poosui Arquitetura e Organização de componentes
+
+Arquitura:Refere-se a parte lógica (assembly)
+-set de instrucoes(ISA):
+
+Organização:Parte fisica (hardware)
+-CPU,IO de dispositivos externos,cache...
