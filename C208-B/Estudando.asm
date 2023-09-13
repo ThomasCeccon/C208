@@ -1,7 +1,7 @@
 .data 
 
-nome: .ascii "Thomas"
-idade: .byte 14
+nome: .ascii "Thomas"  #string sem espaco, com espaco eh asciiz
+idade: .byte 20
 
 
 
