@@ -1,10 +1,10 @@
-#2)usuario entrar com idade, e mostrar a idade dele daqui 30 anos
+  #2)usuario entrar com idade, e mostrar a idade dele daqui 30 anos
 .data
 	frase: .asciiz "Olá. por favor, entre com sua idade: "
 	saida: .asciiz "Sua idade é: "
 
 .text    
-    li $t1,30 #valor de 30
+          li $t1,30 #valor de 30
 	li $v0,4 #imprimir uma string
 	la $a0,frase #mostrar  impressao
 	syscall #valor lido passado para $v0
