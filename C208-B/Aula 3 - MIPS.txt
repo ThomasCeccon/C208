@@ -1,0 +1,42 @@
+Aula 3 - 
+
+- Arquitetura Mips:
+.Processador Mips de arquitetura RISC com 32 bits
+.MIPS com esses segmentos: 0XFFFFFFC/0X1001000[DADOS]
+                           0XFFFFFFC/0X0040000[PROGRAMA(.txt)]
+.1)3 colunas
+1-label:nome para representar um endereco de memoria EX: VAR:  
+2-Começa com (.) depois a (DIRETIVA:.DATA E INSTRUÇÃO:li $v0,4) 
+3-
+
+
+1)Declarar as variaveis
+.ASCII: Armazena Char ou String 
+.ASCIIX:     ''                 + CARACTER NULO NO FINAL
+
+.salvar 
+.clicar nas ferramentas para mostrar os segmentos de dados 
+
+2)Em segmento de dados: Mostra o nome
+-Da direita para a esquerda
+-big_endian
+
+.Primeiro segmento
+[   M-0x10010000 primeiro endereco
+    A-0X10100001 segundo    "
+    R-0X10100002 terceiro   "
+    C                              ]
+
+.word 32 bits = 4 bytes
+.half 2 bytes
+.space n : permite reservar n bytes
+
+
++primeira questao da prova:
+
+
+.Diminuir a quantidade de segmentos
+-Depende da ordem da declacaraco->Começar com os que ocupam menos espaco
+
+
+

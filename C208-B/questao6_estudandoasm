@@ -1,0 +1,64 @@
+.data
+	frase1: .asciiz "Primeiro valor: "
+	frase2: .asciiz "Segundo valor: "
+	frase3: .asciiz "Terceiro valor: "
+	f_menor: .asciiz "Menor que 100"
+	f_igual: .asciiz "Igual a 100"
+	f_maior: .asciiz "Maior a 100"
+
+.text
+	#primeiro valor
+	la $a0,frase1
+	li $v0,4
+	syscall
+	
+	#entrada de dados
+	li $v0,5
+	syscall
+	add $t1,$v0,$0
+	
+	#============segundo valor============
+	la $a0,frase2
+	li $v0,4
+	syscall
+	
+	#entrada de dados
+	li $v0,5
+	syscall
+	add $t2,$v0,$0
+	
+	#=====================terceiro valor===========
+	la $a0,frase3
+	li $v0,4
+	syscall
+	
+	#entrada de dados
+	li $v0,5
+	syscall
+	add $t3,$v0,$0
+	
+	
+	#============soma===============
+	add $t1,$t1,$t2
+	add $t1,$t1,$t3
+	
+	#comparar se menor,maior ou igual
+	blt $t1,100,menor
+	bgt $t1,100,maior
+	li $v0,5
+	la $a0,f_igual
+	syscall
+	j fim
+	menor:
+	li $v0,5
+	la $a0,f_menor
+	syscall
+	maior:
+	li $v0,5
+	la $a0,f_maior
+	syscall
+	fim: li $v0,10
+	syscall
+	
+	
+

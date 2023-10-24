@@ -2,6 +2,7 @@
 	frase1: .asciiz "Entre com sua idade: "
 	frase2: .asciiz "Voce e maior de idade"
 	frase3: .asciiz "Voce e menor de idade"
+	frase
 	
 .text
 	

@@ -19,5 +19,4 @@ j exit
 diferente:
 add $t2, $t0, $t1  # c = a + b
 sub $t0, $t1, $t2  # a = b - c
-
 exit:
